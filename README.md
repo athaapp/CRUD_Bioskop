@@ -17,3 +17,6 @@ Next:
 5. Tunggu proses unduh. Kalao muncul kotak pop-up di pojok kanan bawah, klik tombol open.
 
 nek ada error bilang yo, :p
+
+buat akses webnya:
+http://localhost/crud_bioskop/index.php
