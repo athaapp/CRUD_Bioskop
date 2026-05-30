@@ -6,9 +6,14 @@ Yang dibutuhkan:
 - Browser
 
 Cara menjalankan:
-- Masukkan folder Bioskop yang ada di _CRUD_Implementation-Semester-2_ ke folder htdocs dalam folder XAMPP kalian
-- Jangan lupa jalankan XAMPP
-- Impor database Bioskop.sql ke dalam phpmyadmin (jangan lupa membuat database terlebih dahulu,
-  baru masuk ke database yang sudah kalian buat, kemudian impor database bioskop.sql)
-- Setelah itu masuk ke localhost/bioskop
-- Kalau ingin mengedit folder Bioskop, drag folder Bioskop 
+- Salin link repository ini (kotak hijau dengan simbol < >)
+- Buka VS Code
+
+Next:
+1. Di VS Code, teken tombol Ctrl + Shift + P buat munculin kotak pencarian di atas.
+2. Ketik kata kunci, Git: Clone, lalu tekan Enter.
+3. Tempel (paste) link GitHub (repository) yang tadi ke dalam kotak tersebut, lalu tekan Enter. Jendela penyimpanan komputer akan terbuka.
+4. Pilih folder C:/xampp/htdocs/ sebagai tempat nyimpen, klik tombol Select as Repository Destination (atau Select Repository Location).
+5. Tunggu proses unduh. Kalao muncul kotak pop-up di pojok kanan bawah, klik tombol open.
+
+nek ada error bilang yo, :p
