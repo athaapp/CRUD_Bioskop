@@ -18,7 +18,7 @@ $query = mysqli_query($koneksi, "SELECT * FROM film");
 <body>
 
    <div class ="container">
-      <h1>Data film bioskop - Tes git ke 2</h1>
+      <h1>Data film bioskop - Tes git ke 3</h1>
       <a href ="add.php">Tambah film</a>
 
       <table>
