@@ -17,6 +17,7 @@ if ($search) {
     <title>Data Film - Bioskop</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <?php include "navbar.php"; ?>
 
@@ -65,6 +66,7 @@ if ($search) {
             </tr>
             <?php endwhile; endif; ?>
         </table>
+        
     </div>
 </body>
 </html>
