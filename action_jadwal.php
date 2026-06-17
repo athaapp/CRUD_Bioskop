@@ -16,17 +16,6 @@ if (isset($_POST['add'])) {
         VALUES ($id_film, $id_studio, '$tanggal', '$jam_tayang')");
     header("Location: jadwal.php");
     exit;
-
-    if (empty($judul) || empty($genre) || $durasi <= 0) {
-        echo "<script>alert('Semua field harus diisi dengan benar!'); history.back();</script>";
-        exit;
-    }
-
-    mysqli_query($koneksi, "INSERT INTO film (judul, genre, durasi, poster) 
-                           VALUES ('$judul', '$genre', $durasi, '$poster_name')");
-    
-    header("Location: index.php");
-    exit;
 }
 
 if (isset($_POST['update'])) {

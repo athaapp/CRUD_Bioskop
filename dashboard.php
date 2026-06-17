@@ -1,19 +1,11 @@
 <?php
-session_start();
-
-if (!isset($_SESSION['status']) || $_SESSION['status'] !== 'login') {
-    header("Location: login.php");
-    exit;
-}
-
 include "koneksi.php";
 
-$total_film   = mysqli_fetch_row(mysqli_query($koneksi, "SELECT COUNT(*) FROM film"))[0];
-$total_studio = mysqli_fetch_row(mysqli_query($koneksi, "SELECT COUNT(*) FROM studio"))[0];
-$total_jadwal = mysqli_fetch_row(mysqli_query($koneksi, "SELECT COUNT(*) FROM jadwal"))[0];
-$total_tiket  = mysqli_fetch_row(mysqli_query($koneksi, "SELECT SUM(jumlah_tiket) FROM tiket"))[0] ?? 0;
+$total_film    = mysqli_fetch_row(mysqli_query($koneksi, "SELECT COUNT(*) FROM film"))[0];
+$total_studio  = mysqli_fetch_row(mysqli_query($koneksi, "SELECT COUNT(*) FROM studio"))[0];
+$total_jadwal  = mysqli_fetch_row(mysqli_query($koneksi, "SELECT COUNT(*) FROM jadwal"))[0];
+$total_tiket   = mysqli_fetch_row(mysqli_query($koneksi, "SELECT SUM(jumlah_tiket) FROM tiket"))[0] ?? 0;
 ?>
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -29,8 +21,7 @@ $total_tiket  = mysqli_fetch_row(mysqli_query($koneksi, "SELECT SUM(jumlah_tiket
         <h1>Dashboard Bioskop</h1>
 
         <div class="card-grid">
-            <div class="card card-blue"
-     onclick="window.location='index.php'">
+            <div class="card card-blue">
                 <div class="card-icon">🎬</div>
                 <div class="card-info">
                     <span class="card-number"><?= $total_film ?></span>
@@ -38,8 +29,7 @@ $total_tiket  = mysqli_fetch_row(mysqli_query($koneksi, "SELECT SUM(jumlah_tiket
                 </div>
                 <a href="index.php" class="card-link">Lihat Data →</a>
             </div>
-            <div class="card card-green"
-     onclick="window.location='studio.php'">
+            <div class="card card-green">
                 <div class="card-icon">🏛️</div>
                 <div class="card-info">
                     <span class="card-number"><?= $total_studio ?></span>
@@ -47,8 +37,7 @@ $total_tiket  = mysqli_fetch_row(mysqli_query($koneksi, "SELECT SUM(jumlah_tiket
                 </div>
                 <a href="studio.php" class="card-link">Lihat Data →</a>
             </div>
-            <div class="card card-orange"
-     onclick="window.location='jadwal.php'">
+            <div class="card card-orange">
                 <div class="card-icon">📅</div>
                 <div class="card-info">
                     <span class="card-number"><?= $total_jadwal ?></span>
@@ -56,8 +45,7 @@ $total_tiket  = mysqli_fetch_row(mysqli_query($koneksi, "SELECT SUM(jumlah_tiket
                 </div>
                 <a href="jadwal.php" class="card-link">Lihat Data →</a>
             </div>
-            <div class="card card-red"
-     onclick="window.location='tiket.php'">
+            <div class="card card-red">
                 <div class="card-icon">🎟️</div>
                 <div class="card-info">
                     <span class="card-number"><?= $total_tiket ?></span>
