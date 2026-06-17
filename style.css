@@ -8,66 +8,52 @@
 }
 
 :root {
-    --primary:      #E50914;
-    --primary-dark: #B20710;
-    --primary-soft: #2A0B0D;
-
-    --danger:       #FF3B3B;
-    --danger-soft:  #2D1113;
-
-    --success:      #22C55E;
-    --success-soft: #0F2418;
-
-    --warning:      #F59E0B;
-    --warning-soft: #2A1E08;
-
-    --info:         #3B82F6;
-    --info-soft:    #0F172A;
-
-    --text-main:    #FFFFFF;
-    --text-muted:   #A1A1AA;
-
-    --border:       #27272A;
-
-    --bg:           #0A0A0A;
-    --white:        #18181B;
-
-    --shadow:       0 8px 24px rgba(0,0,0,.4);
-
-    --radius:       10px;
-    --radius-sm:    6px;
+    --primary:     #5C6BC0;
+    --primary-dark:#3949AB;
+    --primary-soft:#E8EAF6;
+    --danger:      #E53935;
+    --danger-soft: #FFEBEE;
+    --success:     #43A047;
+    --success-soft:#E8F5E9;
+    --warning:     #FB8C00;
+    --warning-soft:#FFF3E0;
+    --info:        #039BE5;
+    --info-soft:   #E1F5FE;
+    --text-main:   #2D2D2D;
+    --text-muted:  #757575;
+    --border:      #E0E0E0;
+    --bg:          #F5F6FA;
+    --white:       #FFFFFF;
+    --shadow:      0 2px 12px rgba(92,107,192,0.10);
+    --radius:      10px;
+    --radius-sm:   6px;
 }
 
 body {
-    background:
-        linear-gradient(
-            to bottom,
-            rgba(229,9,20,.15),
-            rgba(10,10,10,1)
-        );
-    background-color: #0A0A0A;
-    color: white;
+    background: var(--bg);
+    color: var(--text-main);
 }
 
 /* ── NAVBAR ── */
-.navbar{
-    background:#111;
-    border-bottom:1px solid #222;
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    padding:0 40px;
-    height:70px;
+.navbar {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.06);
 }
 
-.nav-brand{
-    color:#E50914;
-    font-size:42px;
-    font-weight:800;
-    letter-spacing:-1px;
-    text-transform:uppercase;
+.nav-brand {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary);
+    letter-spacing: -0.3px;
 }
 
 .nav-links {
@@ -127,9 +113,7 @@ h2 {
 }
 
 .card {
-    cursor: pointer;
-    background: #18181B;
-    border: 1px solid #27272A;
+    background: var(--white);
     border-radius: var(--radius);
     padding: 24px 20px;
     display: flex;
@@ -207,7 +191,7 @@ h2 {
 
 .toolbar > a {
     background: var(--primary);
-    color: #fff;
+    color: var(--white);
     padding: 9px 20px;
     border-radius: var(--radius-sm);
     text-decoration: none;
@@ -252,7 +236,7 @@ h2 {
 .btn-search {
     padding: 9px 18px;
     background: var(--primary);
-    color: #fff;
+    color: var(--white);
     border: none;
     border-radius: var(--radius-sm);
     font-size: 14px;
@@ -302,7 +286,7 @@ table {
 
 th {
     background: var(--primary);
-    color: #FFFFFF !important;
+    color: var(--white);
     padding: 14px 18px;
     text-align: left;
     font-size: 13px;
@@ -324,7 +308,7 @@ tr:last-child td {
 }
 
 tr:hover td {
-    background: #1F1F23;
+    background: #FAFAFA;
 }
 
 /* ── BADGES ── */
@@ -335,7 +319,7 @@ tr:hover td {
     font-size: 12px;
     font-weight: 600;
     background: var(--primary-soft);
-    color: #d1cfcf;
+    color: var(--primary);
 }
 
 /* ── ACTION BUTTONS IN TABLE ── */
@@ -347,7 +331,7 @@ td a {
     font-size: 13px;
     font-weight: 500;
     background: var(--primary-soft);
-    color: #c3c3c3;
+    color: var(--primary);
     margin-right: 6px;
     transition: background 0.15s, color 0.15s;
 }
@@ -359,7 +343,7 @@ td a:hover {
 
 td a.btn-delete {
     background: var(--danger-soft);
-    color: #c24242;
+    color: var(--danger);
     margin-right: 0;
 }
 

@@ -1,5 +1,5 @@
 <nav class="navbar">
-    <div class="nav-brand">Bioskop App</div>
+    <div class="nav-brand">🎬 Bioskop App</div>
     <ul class="nav-links">
         <li><a href="dashboard.php" <?= basename($_SERVER['PHP_SELF']) == 'dashboard.php' ? 'class="active"' : '' ?>>Dashboard</a></li>
         <li><a href="index.php" <?= basename($_SERVER['PHP_SELF']) == 'index.php' ? 'class="active"' : '' ?>>Film</a></li>
