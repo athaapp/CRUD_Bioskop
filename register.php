@@ -1,6 +1,5 @@
 <?php
 session_start();
-// Jika user sudah login, tidak perlu registrasi lagi, langsung lempar ke dashboard
 if (isset($_SESSION['status']) && $_SESSION['status'] === 'login') {
     header("Location: dashboard.php");
     exit;
