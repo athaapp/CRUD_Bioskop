@@ -15,8 +15,7 @@ Yang dibutuhkan:
 - Git bash dengan VS Code sebagai terminal
 - GitHub
 
-**1) ---------------------------------**
-Cara menjalankan (ngeclone dari git):
+**Cara menjalankan (ngeclone dari git):**
 - Salin link repository ini (kotak hijau dengan simbol < >)
 - Buka VS Code
 Next:
@@ -28,8 +27,7 @@ Next:
 6. Akses web pake localhost dengan format --> localhost/_namafolder_/index.php (nama folder tergantung kalian ngasih nama foldernya apa, liat nama
    foldernya di dalem folder htdocs).
 
-**2) -----------------------------------------**
-Cara menjalankan (kalau ga mau lewat github):
+**Cara menjalankan (kalau ga mau lewat github):**
 1. Download folder paling terbaru yang ada di drive (ada di group wa)
 2. Masukin itu folder ke htdocs XAMPP kalian
 3. Download database paling terbaru yang ada di drive
