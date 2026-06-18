@@ -5,7 +5,7 @@ Implementasi CRUD dengan studi kasus menjadi admin Bioskop (Kelompok 2)
 - Maylisa Rahma Putri (5325600007)
 - Nashshar Haidar Farras (5325600016)
 - Muchamad Adi Firmansyah (5325600026)
-- Emmanuel Eusondy Taulupun (5325600021)
+- Emmanuel Eusondy Talupun (5325600021)
 
 Yang dibutuhkan:
 - XAMPP
