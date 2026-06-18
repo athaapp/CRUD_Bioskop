@@ -32,7 +32,7 @@
     --bg:           #0A0A0A;
     --white:        #18181B;
 
-    --shadow:       0 8px 24px rgba(0,0,0,.4);
+    --shadow:       0 10px 24px rgba(0,0,0,.4);
 
     --radius:       10px;
     --radius-sm:    6px;
@@ -43,8 +43,8 @@ body {
     
     background: linear-gradient(
         to bottom,
-        rgb(255, 58, 68),
-        rgba(10,10,10,1)
+        rgb(88, 14, 14),
+        rgb(8, 8, 8)
     ) fixed; 
     
     min-height: 100vh;
@@ -56,7 +56,6 @@ body {
     padding-bottom: 60px;
 }
 
-/* ── NAVBAR ── */
 .navbar{
     background:#111;
     border-bottom:1px solid #222;
@@ -105,7 +104,6 @@ body {
     font-weight: 600;
 }
 
-/* ── CONTAINER ── */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -201,7 +199,6 @@ h2 {
 .card-red    { border-left-color: var(--danger); }
 .card-red    .card-number { color: var(--danger); }
 
-/* ── TOOLBAR ── */
 .toolbar {
     display: flex;
     align-items: center;
@@ -227,7 +224,6 @@ h2 {
     background: var(--primary-dark);
 }
 
-/* ── SEARCH FORM ── */
 .search-form {
     display: flex;
     align-items: center;
@@ -295,7 +291,6 @@ h2 {
     margin-bottom: 10px;
 }
 
-/* ── TABLE ── */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -333,7 +328,6 @@ tr:hover td {
     background: #1F1F23;
 }
 
-/* ── BADGES ── */
 .badge {
     display: inline-block;
     padding: 3px 10px;
@@ -344,7 +338,6 @@ tr:hover td {
     color: #d1cfcf;
 }
 
-/* ── ACTION BUTTONS IN TABLE ── */
 td a {
     display: inline-block;
     padding: 5px 14px;
@@ -541,3 +534,15 @@ textarea {
     color: #ffffff !important;
     text-decoration: none;
 }
+
+/* Sembunyikan scrollbar untuk Chrome, Safari, dan Opera */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Sembunyikan scrollbar untuk IE, Edge, dan Firefox */
+body {
+    -ms-overflow-style: none;  /* IE dan Edge */
+    scrollbar-width: none;     /* Firefox */
+}
+
