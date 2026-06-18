@@ -41,3 +41,15 @@ Next:
 nek ada error bilang yo, :p
 
 database juga saya upload di repo ini, barangkali lebih enak nda usah muter-muter ke drive.
+
+**PENTING**
+Untuk setting database agar relasi tetap masuk akal, jangan lupa kalau ada foreign key di tiap tabel kalian, setting kayak gini:
+1. Masuk ke tabel
+2. Masuk ke Structure di bar atas
+3. Cari menu yang bernama Relation View (di atas struktur tabel kalian)
+4. Setelah masuk, kalo nanti ada foreign key di tabel itu, bakal tampil Constraint Properties yang udah ada namanya
+5. Habistu pada masing-masing constraint pasti ada tulisan ON DELETE sama ON UPDATE
+6. Pada langkah ini, kalian ubah ON DELETE sama ON UPDATE dari RESTRICT menjadi CASCADE
+7. k makasih
+
+ata-
