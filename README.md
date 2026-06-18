@@ -50,6 +50,8 @@ Untuk setting database agar relasi tetap masuk akal, jangan lupa kalau ada forei
 6. Pada langkah ini, kalian ubah ON DELETE sama ON UPDATE dari RESTRICT menjadi CASCADE
 7. k makasih
 
-nek ada error bilang yo, :p
+nek ada error bilang ya
+
 athaa-
+
 :>
